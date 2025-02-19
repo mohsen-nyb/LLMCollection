@@ -1,3 +1,12 @@
+#adapted from "LangChain for LLM Application Development" from "DeepLearning.AI".
+
+
+#!pip install --upgrade langchain
+#!pip install -U langchain-community
+#!pip install tiktoken
+
+
+
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory, ConversationBufferWindowMemory, ConversationSummaryBufferMemory
@@ -50,9 +59,8 @@ memory.load_memory_variables({})
 
 
 
-#3. 
+#3. ConversationSummaryBufferMemory
 
-#!pip install tiktoken
 # create a long string
 schedule = "There is a meeting at 8am with your product team. \
 You will need your powerpoint presentation prepared. \
