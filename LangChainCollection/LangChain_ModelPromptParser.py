@@ -4,7 +4,11 @@
 #!pip install --upgrade langchain
 #!pip install -U langchain-community
 
-
+import os
+import openai
+os.environ['OPENAI_API_KEY']= "" # fill in with your openai api aky. you can get it from here: https://platform.openai.com/api-keys
+openai.api_key = os.environ['OPENAI_API_KEY']
+llm_model = "gpt-3.5-turbo"
 
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
