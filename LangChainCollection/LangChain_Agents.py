@@ -10,6 +10,13 @@ import os
 import openai
 import warnings
 
+# Suppress warnings for cleaner output
+warnings.filterwarnings('ignore')
+
+# Set OpenAI API key for authentication with OpenAI services
+os.environ['OPENAI_API_KEY'] = ""  # Fill in with your OpenAI API key: https://platform.openai.com/api-keys
+openai.api_key = os.environ['OPENAI_API_KEY']
+
 # Importing experimental LangChain modules for advanced tool and agent functionalities
 from langchain_experimental.tools.python.tool import PythonREPLTool
 from langchain_experimental.agents.agent_toolkits import create_python_agent
