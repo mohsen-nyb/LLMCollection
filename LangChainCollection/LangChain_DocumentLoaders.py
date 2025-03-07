@@ -1,4 +1,4 @@
-# Adapted from "LangChain for LLM Application Development" from "DeepLearning.AI".
+# Adapted from "LangChain Chat with Your Data" from "DeepLearning.AI".
 
 # Install necessary dependencies (uncomment and run if needed)
 # !pip install --upgrade langchain
